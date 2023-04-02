@@ -1,0 +1,966 @@
+$background-color: #000000;
+$textcolor: #FFFFFF;
+$textcolor1: #C0C0C0;
+$btncolor: #FFBA00;
+$box: #d60000;
+$box1: #007f5b;
+$mainbox: #171717;
+$main-fonts: 'Oswald';
+$text-fonts: 'DM Sans';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-start{
+    justify-content:flex-start;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+.xs-1 {
+    width: 8.3333%;
+}
+.xs-2 {
+    width: 16.6666%;
+}
+.xs-3 {
+    width: 24.99%;
+}
+.xs-4 {
+    width: 33.33%;
+}
+.xs-5 {
+    width: 41.99%;
+}
+.xs-6 {
+    width: 50%;
+}
+.xs-7 {
+    width: 58.33%;
+}
+.xs-8 {
+    width: 66.66%;
+}
+.xs-9 {
+    width: 75%;
+}
+.xs-10 {
+    width: 83.32%;
+}
+.xs-11 {
+    width: 91.65%;
+}
+.xs-12 {
+    width: 100%;
+}
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7, .xs-8, .xs-9, .xs-10, .xs-11, .xs-12
+.sm-1, .sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7, .sm-8, .sm-9, .sm-10, .sm-11, .sm-12
+.md-1, .md-2, .md-3, .md-4, .md-5, .md-6, .md-7, .md-8, .md-9, .md-10, .md-11, .md-12
+.lg-1, .lg-2, .lg-3, .lg-4, .lg-5, .lg-6, .lg-7, .lg-8, .lg-9, .lg-10, .lg-11, .lg-12
+.xl-1, .xl-2, .xl-3, .xl-4, .xl-5, .xl-6, .xl-7, .xl-8, .xl-9, .xl-10, .xl-11, .xl-12{
+    padding: 12px;
+}
+.devider {
+    width: 150px;
+    border-top: 3px solid $btncolor;
+    margin: 20px 0;
+}
+.devider1{
+    width: 100px;
+    border-top: 3px solid $btncolor;
+    position: absolute;
+    top: 47%;
+    left: 46.5%;
+    margin: 10px 0;
+}
+.dr{
+    width: 150px;
+    border-top: 3px solid $btncolor;
+    margin: 10px 0;
+    position: absolute;
+    left: 45%;
+}
+@mixin btn {
+    width: 165px;
+    height: 45px;
+    background-color: $btncolor;
+    color: $textcolor;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'DM Sans';
+}
+@mixin h2{
+    font-size: 62px;
+    color: $textcolor;
+    font-family: 'oswald';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@mixin p {
+    font-size: 17px;
+    font-family: 'DM Sans';
+    color: $textcolor1;
+    font-weight: 400;
+    margin-top: 25px;
+}
+@mixin h4{
+    font-size: 20px;
+    font-family: 'Oswald';
+    color: $textcolor;
+    font-weight: 600;
+}
+%span{
+    font-size: 18px;
+    font-family: 'DM Sans';
+    color: $textcolor;
+}
+%div{
+    font-size: 20px;
+    color: $btncolor;
+    font-family: 'oswald';
+    font-weight: 600;
+}
+%a{
+    font-size: 22px;
+    font-family: 'Oswald';
+    color: $textcolor;
+}
+// header
+header {
+    background-color: $background-color;
+    padding: 15px 0;
+
+    .logo {
+        img {
+            width: 150px;
+        }
+    }
+
+    .menu {
+        ul {
+            li:first-child {
+                a {
+                    color: $btncolor;
+                }
+            }
+
+            li {
+                a {
+                    font-size: 16px;
+                    color: $textcolor;
+                    font-family: 'DM Sans';
+                    padding: 0 20px;
+                }
+                i{
+                    padding: 0 6px;
+                }
+            }
+            a:hover {
+                color: $btncolor;
+            }
+        }
+    }
+
+    a {
+        .btn {
+            @include btn;
+        }
+    }
+}
+
+// slider 
+.slider {
+    background-image: linear-gradient(0deg, #000000 0%, #000000E3 74%), url('../img/dark-wooden-background-with-flour-dust-e1627971410843.jpg');
+    background-size: cover;
+    padding: 60px 100px;
+
+    .slider-img {
+        img {
+            width: 100%;
+        }
+    }
+    .slider-img:hover{
+        img{
+            transform: translateY(-2%);
+            transition: all 0.5s;
+        }
+    }
+
+    .contant {
+        margin-left: 30px;
+        h2 {
+           @include h2;
+        }
+
+        p {
+            @include p;
+        }
+    }
+
+    i {
+        font-size: 40px;
+        color: $btncolor;
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+
+    span {
+        @extend %span;
+        margin-left: 30px;
+    }
+
+    .btn {
+        @include btn;
+        color: $background-color;
+        margin-left: 30px;
+    }
+}
+// mentor 
+.mentor{
+    background-color: $background-color;
+    padding: 40px 0;
+    .box, .box1, .box2{
+      width: 100%;
+      height: 125px;
+      background-color: $btncolor;
+      border-radius: 10px;
+        .box-img{
+            img{
+                width: 100%;
+            }
+        }
+        h2{
+            @include h2;
+            font-size: 24px;
+        }
+        p{
+            @include p;
+            color: $textcolor;
+            margin-bottom: 5px;
+        }
+        a{
+            font-size: 16px;
+            color: $background-color;
+            font-family: 'DM Sans';
+        }
+    }
+    .box1{
+        background-color: $box1;
+        a{
+            color: $btncolor;
+        }
+    }
+    .box2{
+        background-color: $box;
+        a{
+            color: $btncolor;
+        }
+    }
+}
+// offer 
+.offer{
+    background-color: $background-color;
+    padding: 60px 0;
+    .offer-box{
+        width: 100%;
+        height: auto;
+        background-color:$mainbox;
+        padding: 15px;
+        border-radius: 10px;
+        span{
+            @extend %span;
+            color: $btncolor;
+            margin: none;
+        }
+        h2{
+            @include h2;
+            font-size: 28px;
+        }
+        p{
+            @include p;
+        }
+        a{
+            font-size: 16px;
+            color:$btncolor;
+            font-family: 'DM Sans';
+        }
+        .offer-img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// tasted-food 
+.tasted-food{
+    background-color: $background-color;
+    padding: 30px 0;
+    .tasted-img{
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    h2{
+        @include h2;
+        font-size: 42px;
+    }
+    p{
+        @include p;
+    }
+    i{
+        font-size: 14px;
+        color: $btncolor;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    ul{
+        li{
+            font-size: 16px;
+            color: $textcolor1;
+            font-family: 'DM Sans';
+        }
+    }
+    .btn{
+        @include btn;
+        color: $mainbox;
+    }
+}
+// best-menu 
+.best-menu{
+    background-color: $background-color;
+    padding: 30px 0 40px 0;
+    text-align: center;
+    h2{
+        @include h2;
+        font-size: 42px;
+    }
+    p{
+        @include p;
+    }
+    .btn{
+        @include btn;
+        width: 120px;
+        height: 58px;
+        line-height: 58px;
+        margin: 20px 20px;
+    }
+    .btn1{
+        width: 120px;
+        height: 58px;
+        background-color: $mainbox;
+        line-height: 58px;
+        text-align: center;
+        color:$textcolor;
+        border-radius: 5px;
+        margin: 20px 20px;
+        font-family: 'DM Sans';
+    }
+    .btn1:hover{
+        background-color: $btncolor;
+        color: $mainbox;
+    }
+}
+.food-menu{
+    background-color: $background-color;
+    padding-bottom: 20px;
+    .food-box{
+        width: 100%;
+        height: 60%;
+        background-color: $mainbox;
+        padding: 20px;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    .food-box:hover{
+        background-color: $btncolor;
+        transition: all 0.5s;
+    }
+    .food-box{
+        img:hover{
+            transform: scale(1.1);
+            transition: all 0.5s;
+        }
+    }
+    h2{
+        @include h2;
+        font-size: 24px;
+    }
+    p{
+        @include p;
+    }
+    .div{
+        @extend %div;
+    }
+}
+.video{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .back-video{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+    .content{
+        text-align: center;
+        h2{
+            @include h2;
+            font-size: 42px;
+        }
+        span{
+            @extend %span;
+            font-size: 17px;
+            color: $textcolor1;
+        }
+        p{
+            @include p;
+        }
+        button{
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            color: $textcolor;
+            background-color: $btncolor;
+            border-radius: 50%;
+            border: none;
+            font-size: 25px;
+        }
+    }
+}
+.order-food{
+    background-color: $background-color;
+    padding: 80px 0;
+    .order-img{
+        img{
+            width: 100%;
+        }
+    }
+    .order-img{
+        img:hover{
+            transform: translateY(-2%);
+            transition: all 0.5s;
+        }
+    }
+    .order-content{
+        padding: 50px;
+        h2{
+            @include h2;
+            font-size: 42px;
+        }
+        p{
+            @include p;
+        }
+        .delivery-box{
+            width: 80%;
+            height: 100%;
+            background-color: $mainbox;
+            padding: 15px;
+            border-radius: 10px;
+            .sub-box{
+                width: 75px;
+                height: 75px;
+                line-height: 75px;
+                text-align: center;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: $btncolor;
+                i{
+                    font-size: 40px;
+                    color: $textcolor;
+                }
+            }
+            .sub-box{
+                i:hover{
+                    color: $mainbox;
+                    transition: all 0.5s;
+                }
+            }
+            span{
+                @extend %span;
+                font-weight: 600;
+            }
+            p{
+                @include p;
+                margin-top: 10px;
+            }
+        }
+    }
+    .app-img{
+        img{
+            width: 150px;
+            margin: 20px 10px;
+        }
+    }
+    .app-img{
+        img:hover{
+            transform: translateY(-10%);
+            transition: all 0.5s;
+        }
+    }
+}
+.custmore-review, .custmore-reviews{
+    background-color: $mainbox;
+    padding-top: 100px;
+    text-align: center;
+    .menu-contant{
+        h2{
+            @include h2;
+        }
+        p{
+            @include p;
+            margin-top: 25px;
+        }
+    }
+}
+.custmore-review-name{
+    background-color: $mainbox;
+    padding-bottom: 100px;
+    .custmore-box{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: $mainbox;
+        border-radius: 10px;
+    }
+    p{
+        @include p;
+    }
+    img{
+        width: 60px;
+        border-radius: 50%;
+    }
+    h2{
+        @include h2;
+        font-size: 18px;
+    }
+    i{
+        font-size: 60px;
+        color: $btncolor;
+    }
+}
+.special-offer{
+    background-image: url('../img/three-men-enjoying-burgers-and-beer-in-bar-e1627971474996.jpg');
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.562);
+    background-blend-mode: darken;
+    h2{
+        @include h2;
+        font-size: 42px;
+    }
+    p{
+        @include p;
+    }
+    a{
+        .btn{
+            @include btn;
+            width: 200px;
+            color: $mainbox;
+            margin-top: 20px;
+        }
+    }
+}
+.custmore-reviews, .news-articale{
+    background-color: $background-color;
+    .news-box{
+        width: 100%;
+        background-color: $background-color;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .btn1{
+            width: 70px;
+            height: 50px;
+            background-color: $background-color;
+            line-height: 58px;
+            text-align: center;
+            color: $btncolor;
+            border-radius: 5px;
+            font-family: 'DM Sans';
+            position: absolute;
+            top: 47%;
+            left: 0;
+        }
+        a{
+            @extend %a;
+        }
+        p{
+            @include p;
+            margin: 10px 0;
+        }
+        .read{
+            a{
+                color: $btncolor;
+                font-size: 16px;
+            }
+            i{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.news-articale{
+    padding-bottom: 80px;
+}
+.subscribe{
+    background-color: $btncolor;
+    padding: 80px 0;
+    .content{
+        h2{
+            @include h2;
+            font-size: 42px;
+            color: $background-color;
+        }
+        p{
+            @include p;
+            color: $textcolor;
+        }
+    }
+    .sub-now{
+        input{
+            width: 365px;
+            height: 58px;
+            background-color: $textcolor;
+            border-radius: 10px;
+            color: $textcolor1;
+            border: none;
+            padding: 16px 0 16px 25px;
+            font-size: 16px
+        }
+        .btn{
+            @include btn;
+            background-color: $background-color;
+            height: 55px;
+            margin-left: 10px;
+            line-height: 55px;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+    .sub-now{
+        input:hover{
+            border: 2px solid $mainbox;
+        }
+    }
+}
+footer{
+    background-color: $background-color;
+    padding: 80px 0 20px 0;
+    .logo{
+        img{
+            width: 200px;
+        }
+    }
+    p{
+        @include p;
+        font-size: 16px;
+    }
+    h4{
+        @include h4;
+        padding-bottom: 5px;
+    }
+    .menu{
+        ul{
+            li{
+                padding-bottom: 10px;
+                a{
+                    font-size: 16px;
+                    font-family: $text-fonts;
+                    color: $textcolor;
+                    font-weight: 300;
+                }
+            }
+        }
+        ul{
+            li:hover{
+                a{
+                    color: $btncolor;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .information{
+        padding-bottom: 20px;
+       span{
+          @extend %span;
+          font-size: 15px;
+          padding-top: 8px;
+          i{
+            color: $btncolor;
+            padding-right: 10px;
+          }
+       }
+    }
+    span:hover{
+        color: $btncolor;
+        transition: all 0.5s;
+    }
+    .information-icons{
+       a{
+        i{
+            color: $btncolor;
+            font-size: 18px;
+            padding-right: 25px;
+            padding-top: 10px;
+        }
+       }
+        i:hover{
+            color: $textcolor;
+        }
+    }
+    .span{
+        width: 100%;
+        border: 0.1px solid $textcolor1;
+        margin: 25px 0;
+    }
+    p{
+        font-size: 14px;
+        color: $textcolor;
+    }
+}
+// about us 
+.about-us, .pages, .contect-us{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-image: url('../img/burgers-with-beef-and-sauces--e1627971510961.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.562);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        @include h2;
+        font-size: 42px;
+    }
+    p{
+        @include p;
+        margin: 30px 0;
+    }
+}
+.tasted-food{
+    .food-sing{
+        margin-top: 20px;
+        img{
+            width: 100%;
+        }
+        h2{
+            font-size: 18px;
+            font-family: $text-fonts;
+        }
+    }
+}
+.counter{
+    background-color: $background-color;
+    padding: 40px 0 40px 0;
+    .box{
+        width: 100%;
+        background-color: $mainbox;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        i{
+            font-size: 50px;
+            color: $btncolor;
+        }
+        span{
+            @extend %span;
+            font-size: 38px;
+            font-family: $main-fonts;
+            sup{
+                i{
+                    font-size: 16px;
+                    position: absolute;
+                    padding: 15px 10px;
+                }
+            }
+        }
+        p{
+            @include p;
+        }
+    }
+}
+.best-chif{
+    background-color: $background-color;
+    text-align: center;
+    padding-top: 40px;
+    h2{
+        @include h2;
+    }
+    p{
+        @include p;
+    }
+}
+.chif-imgs, .chif-imgs1{
+    background-color: $background-color;
+    padding-bottom: 60px;
+    .chif-img{
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+// pages section 
+.pages{
+    background-image: url('../img/female-chef-talking-with-waiter-by-colleague-at-kitchen.jpg');
+    background-size: cover;
+}
+.chif-imgs1{
+    padding-top: 60px;     
+}
+
+.contect-us{
+    background-image: url('../img/male-friends-drinking-beer-and-eating-burgers-in-sports-bar.jpg');
+    background-size: cover;
+}
+.details{
+    background-color: $background-color;
+    padding: 80px 0;
+    .information{
+        h2{
+            @include h2;
+            font-size: 42px;
+        }
+        p{
+            @include p;
+        }
+    }
+    .box-icon{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 90px;
+        i{
+            font-size: 40px;
+            color: $btncolor;
+            font-weight: 100;
+        }
+    }
+    .box-icon:hover{
+        background-color: $btncolor;
+        i:hover{
+            color: $mainbox;
+        }
+    }
+    h2{
+        @include h2;
+        font-size: 24px;
+        margin-left: 5px;
+    }
+    span{
+        @extend %span;
+        font-size: 15px;
+        color: $textcolor1;
+        margin-left: 5px;
+    }
+    .span{
+        width: 100%;
+        border: 0.1px solid $textcolor1;
+        margin: 10px 0;
+    }
+    .information-icons{
+        .box{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 5px;
+            margin: 0 5px;
+            i{
+                color: $btncolor;
+                font-size: 20px;
+            }
+        }
+        .box:hover{
+            background-color: $btncolor;
+            i{
+                color: $mainbox;
+            }
+        }
+    }
+    .form{
+        padding: 20px;
+        form{
+            h2{
+                @include h2;
+                font-size: 24px;
+                font-family: $main-fonts;
+            }
+            label{
+                font-size: 18px;
+                font-family: $text-fonts;
+                color: $textcolor;
+                font-weight: 600;
+                span{
+                    color: $btncolor;
+                }
+            }
+            input{
+                background-color: $mainbox;
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+                padding: 15px 25px;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 15px;
+                color: $textcolor1;
+                border: none;
+            }
+            .btn{
+                @include btn;
+                margin-left: 11px;
+                height: 60px;
+                width: 200px;
+                line-height: 60px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.google-map{
+    background-color: $background-color;
+    padding: 30px 0 120px 0;
+}

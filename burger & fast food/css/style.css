@@ -1,0 +1,1068 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.xs-1 {
+  width: 8.3333%;
+}
+
+.xs-2 {
+  width: 16.6666%;
+}
+
+.xs-3 {
+  width: 24.99%;
+}
+
+.xs-4 {
+  width: 33.33%;
+}
+
+.xs-5 {
+  width: 41.99%;
+}
+
+.xs-6 {
+  width: 50%;
+}
+
+.xs-7 {
+  width: 58.33%;
+}
+
+.xs-8 {
+  width: 66.66%;
+}
+
+.xs-9 {
+  width: 75%;
+}
+
+.xs-10 {
+  width: 83.32%;
+}
+
+.xs-11 {
+  width: 91.65%;
+}
+
+.xs-12 {
+  width: 100%;
+}
+
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7, .xs-8, .xs-9, .xs-10, .xs-11, .xs-12 .sm-1,
+.sm-2, .sm-3, .sm-4, .sm-5, .sm-6, .sm-7, .sm-8, .sm-9, .sm-10, .sm-11, .sm-12 .md-1,
+.md-2, .md-3, .md-4, .md-5, .md-6, .md-7, .md-8, .md-9, .md-10, .md-11, .md-12 .lg-1,
+.lg-2, .lg-3, .lg-4, .lg-5, .lg-6, .lg-7, .lg-8, .lg-9, .lg-10, .lg-11, .lg-12 .xl-1,
+.xl-2, .xl-3, .xl-4, .xl-5, .xl-6, .xl-7, .xl-8, .xl-9, .xl-10, .xl-11, .xl-12 {
+  padding: 12px;
+}
+
+.devider {
+  width: 150px;
+  border-top: 3px solid #FFBA00;
+  margin: 20px 0;
+}
+
+.devider1 {
+  width: 100px;
+  border-top: 3px solid #FFBA00;
+  position: absolute;
+  top: 47%;
+  left: 46.5%;
+  margin: 10px 0;
+}
+
+.dr {
+  width: 150px;
+  border-top: 3px solid #FFBA00;
+  margin: 10px 0;
+  position: absolute;
+  left: 45%;
+}
+
+.details span, .counter .box span, footer .information span, .order-food .order-content .delivery-box span, .video .content span, .offer .offer-box span, .slider span {
+  font-size: 18px;
+  font-family: "DM Sans";
+  color: #FFFFFF;
+}
+
+.food-menu .div {
+  font-size: 20px;
+  color: #FFBA00;
+  font-family: "oswald";
+  font-weight: 600;
+}
+
+.custmore-reviews .news-box a, .news-articale .news-box a {
+  font-size: 22px;
+  font-family: "Oswald";
+  color: #FFFFFF;
+}
+
+header {
+  background-color: #000000;
+  padding: 15px 0;
+}
+header .logo img {
+  width: 150px;
+}
+header .menu ul li:first-child a {
+  color: #FFBA00;
+}
+header .menu ul li a {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "DM Sans";
+  padding: 0 20px;
+}
+header .menu ul li i {
+  padding: 0 6px;
+}
+header .menu ul a:hover {
+  color: #FFBA00;
+}
+header a .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+}
+
+.slider {
+  background-image: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0.8901960784) 74%), url("../img/dark-wooden-background-with-flour-dust-e1627971410843.jpg");
+  background-size: cover;
+  padding: 60px 100px;
+}
+.slider .slider-img img {
+  width: 100%;
+}
+.slider .slider-img:hover img {
+  transform: translateY(-2%);
+  transition: all 0.5s;
+}
+.slider .contant {
+  margin-left: 30px;
+}
+.slider .contant h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.slider .contant p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.slider i {
+  font-size: 40px;
+  color: #FFBA00;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+.slider span {
+  margin-left: 30px;
+}
+.slider .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  color: #000000;
+  margin-left: 30px;
+}
+
+.mentor {
+  background-color: #000000;
+  padding: 40px 0;
+}
+.mentor .box, .mentor .box1, .mentor .box2 {
+  width: 100%;
+  height: 125px;
+  background-color: #FFBA00;
+  border-radius: 10px;
+}
+.mentor .box .box-img img, .mentor .box1 .box-img img, .mentor .box2 .box-img img {
+  width: 100%;
+}
+.mentor .box h2, .mentor .box1 h2, .mentor .box2 h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+.mentor .box p, .mentor .box1 p, .mentor .box2 p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.mentor .box a, .mentor .box1 a, .mentor .box2 a {
+  font-size: 16px;
+  color: #000000;
+  font-family: "DM Sans";
+}
+.mentor .box1 {
+  background-color: #007f5b;
+}
+.mentor .box1 a {
+  color: #FFBA00;
+}
+.mentor .box2 {
+  background-color: #d60000;
+}
+.mentor .box2 a {
+  color: #FFBA00;
+}
+
+.offer {
+  background-color: #000000;
+  padding: 60px 0;
+}
+.offer .offer-box {
+  width: 100%;
+  height: auto;
+  background-color: #171717;
+  padding: 15px;
+  border-radius: 10px;
+}
+.offer .offer-box span {
+  color: #FFBA00;
+  margin: none;
+}
+.offer .offer-box h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 28px;
+}
+.offer .offer-box p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.offer .offer-box a {
+  font-size: 16px;
+  color: #FFBA00;
+  font-family: "DM Sans";
+}
+.offer .offer-box .offer-img img {
+  width: 100%;
+}
+
+.tasted-food {
+  background-color: #000000;
+  padding: 30px 0;
+}
+.tasted-food .tasted-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.tasted-food h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.tasted-food p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.tasted-food i {
+  font-size: 14px;
+  color: #FFBA00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.tasted-food ul li {
+  font-size: 16px;
+  color: #C0C0C0;
+  font-family: "DM Sans";
+}
+.tasted-food .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  color: #171717;
+}
+
+.best-menu {
+  background-color: #000000;
+  padding: 30px 0 40px 0;
+  text-align: center;
+}
+.best-menu h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.best-menu p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.best-menu .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  width: 120px;
+  height: 58px;
+  line-height: 58px;
+  margin: 20px 20px;
+}
+.best-menu .btn1 {
+  width: 120px;
+  height: 58px;
+  background-color: #171717;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px 20px;
+  font-family: "DM Sans";
+}
+.best-menu .btn1:hover {
+  background-color: #FFBA00;
+  color: #171717;
+}
+
+.food-menu {
+  background-color: #000000;
+  padding-bottom: 20px;
+}
+.food-menu .food-box {
+  width: 100%;
+  height: 60%;
+  background-color: #171717;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.food-menu .food-box img {
+  width: 100%;
+}
+.food-menu .food-box:hover {
+  background-color: #FFBA00;
+  transition: all 0.5s;
+}
+.food-menu .food-box img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.food-menu h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+.food-menu p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.video {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video .back-video {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.video .content {
+  text-align: center;
+}
+.video .content h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.video .content span {
+  font-size: 17px;
+  color: #C0C0C0;
+}
+.video .content p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.video .content button {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  color: #FFFFFF;
+  background-color: #FFBA00;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+}
+
+.order-food {
+  background-color: #000000;
+  padding: 80px 0;
+}
+.order-food .order-img img {
+  width: 100%;
+}
+.order-food .order-img img:hover {
+  transform: translateY(-2%);
+  transition: all 0.5s;
+}
+.order-food .order-content {
+  padding: 50px;
+}
+.order-food .order-content h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.order-food .order-content p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.order-food .order-content .delivery-box {
+  width: 80%;
+  height: 100%;
+  background-color: #171717;
+  padding: 15px;
+  border-radius: 10px;
+}
+.order-food .order-content .delivery-box .sub-box {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #FFBA00;
+}
+.order-food .order-content .delivery-box .sub-box i {
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.order-food .order-content .delivery-box .sub-box i:hover {
+  color: #171717;
+  transition: all 0.5s;
+}
+.order-food .order-content .delivery-box span {
+  font-weight: 600;
+}
+.order-food .order-content .delivery-box p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-top: 10px;
+}
+.order-food .app-img img {
+  width: 150px;
+  margin: 20px 10px;
+}
+.order-food .app-img img:hover {
+  transform: translateY(-10%);
+  transition: all 0.5s;
+}
+
+.custmore-review, .custmore-reviews {
+  background-color: #171717;
+  padding-top: 100px;
+  text-align: center;
+}
+.custmore-review .menu-contant h2, .custmore-reviews .menu-contant h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.custmore-review .menu-contant p, .custmore-reviews .menu-contant p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-top: 25px;
+}
+
+.custmore-review-name {
+  background-color: #171717;
+  padding-bottom: 100px;
+}
+.custmore-review-name .custmore-box {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #171717;
+  border-radius: 10px;
+}
+.custmore-review-name p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.custmore-review-name img {
+  width: 60px;
+  border-radius: 50%;
+}
+.custmore-review-name h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+}
+.custmore-review-name i {
+  font-size: 60px;
+  color: #FFBA00;
+}
+
+.special-offer {
+  background-image: url("../img/three-men-enjoying-burgers-and-beer-in-bar-e1627971474996.jpg");
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.562);
+  background-blend-mode: darken;
+}
+.special-offer h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.special-offer p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.special-offer a .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  width: 200px;
+  color: #171717;
+  margin-top: 20px;
+}
+
+.custmore-reviews, .news-articale {
+  background-color: #000000;
+}
+.custmore-reviews .news-box, .news-articale .news-box {
+  width: 100%;
+  background-color: #000000;
+  position: relative;
+}
+.custmore-reviews .news-box img, .news-articale .news-box img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.custmore-reviews .news-box .btn1, .news-articale .news-box .btn1 {
+  width: 70px;
+  height: 50px;
+  background-color: #000000;
+  line-height: 58px;
+  text-align: center;
+  color: #FFBA00;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  position: absolute;
+  top: 47%;
+  left: 0;
+}
+.custmore-reviews .news-box p, .news-articale .news-box p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  margin: 10px 0;
+}
+.custmore-reviews .news-box .read a, .news-articale .news-box .read a {
+  color: #FFBA00;
+  font-size: 16px;
+}
+.custmore-reviews .news-box .read i, .news-articale .news-box .read i {
+  margin-left: 5px;
+}
+
+.news-articale {
+  padding-bottom: 80px;
+}
+
+.subscribe {
+  background-color: #FFBA00;
+  padding: 80px 0;
+}
+.subscribe .content h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+  color: #000000;
+}
+.subscribe .content p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  color: #FFFFFF;
+}
+.subscribe .sub-now input {
+  width: 365px;
+  height: 58px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #C0C0C0;
+  border: none;
+  padding: 16px 0 16px 25px;
+  font-size: 16px;
+}
+.subscribe .sub-now .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  background-color: #000000;
+  height: 55px;
+  margin-left: 10px;
+  line-height: 55px;
+}
+.subscribe .sub-now i {
+  margin-right: 5px;
+}
+.subscribe .sub-now input:hover {
+  border: 2px solid #171717;
+}
+
+footer {
+  background-color: #000000;
+  padding: 80px 0 20px 0;
+}
+footer .logo img {
+  width: 200px;
+}
+footer p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  font-size: 16px;
+}
+footer h4 {
+  font-size: 20px;
+  font-family: "Oswald";
+  color: #FFFFFF;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+footer .menu ul li {
+  padding-bottom: 10px;
+}
+footer .menu ul li a {
+  font-size: 16px;
+  font-family: "DM Sans";
+  color: #FFFFFF;
+  font-weight: 300;
+}
+footer .menu ul li:hover a {
+  color: #FFBA00;
+  transition: all 0.5s;
+}
+footer .information {
+  padding-bottom: 20px;
+}
+footer .information span {
+  font-size: 15px;
+  padding-top: 8px;
+}
+footer .information span i {
+  color: #FFBA00;
+  padding-right: 10px;
+}
+footer span:hover {
+  color: #FFBA00;
+  transition: all 0.5s;
+}
+footer .information-icons a i {
+  color: #FFBA00;
+  font-size: 18px;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+footer .information-icons i:hover {
+  color: #FFFFFF;
+}
+footer .span {
+  width: 100%;
+  border: 0.1px solid #C0C0C0;
+  margin: 25px 0;
+}
+footer p {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.about-us, .pages, .contect-us {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  background-image: url("../img/burgers-with-beef-and-sauces--e1627971510961.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.562);
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us h2, .pages h2, .contect-us h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.about-us p, .pages p, .contect-us p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+  margin: 30px 0;
+}
+
+.tasted-food .food-sing {
+  margin-top: 20px;
+}
+.tasted-food .food-sing img {
+  width: 100%;
+}
+.tasted-food .food-sing h2 {
+  font-size: 18px;
+  font-family: "DM Sans";
+}
+
+.counter {
+  background-color: #000000;
+  padding: 40px 0 40px 0;
+}
+.counter .box {
+  width: 100%;
+  background-color: #171717;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.counter .box i {
+  font-size: 50px;
+  color: #FFBA00;
+}
+.counter .box span {
+  font-size: 38px;
+  font-family: "Oswald";
+}
+.counter .box span sup i {
+  font-size: 16px;
+  position: absolute;
+  padding: 15px 10px;
+}
+.counter .box p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.best-chif {
+  background-color: #000000;
+  text-align: center;
+  padding-top: 40px;
+}
+.best-chif h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.best-chif p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.chif-imgs, .chif-imgs1 {
+  background-color: #000000;
+  padding-bottom: 60px;
+}
+.chif-imgs .chif-img img, .chif-imgs1 .chif-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pages {
+  background-image: url("../img/female-chef-talking-with-waiter-by-colleague-at-kitchen.jpg");
+  background-size: cover;
+}
+
+.chif-imgs1 {
+  padding-top: 60px;
+}
+
+.contect-us {
+  background-image: url("../img/male-friends-drinking-beer-and-eating-burgers-in-sports-bar.jpg");
+  background-size: cover;
+}
+
+.details {
+  background-color: #000000;
+  padding: 80px 0;
+}
+.details .information h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 42px;
+}
+.details .information p {
+  font-size: 17px;
+  font-family: "DM Sans";
+  color: #C0C0C0;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.details .box-icon {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 90px;
+}
+.details .box-icon i {
+  font-size: 40px;
+  color: #FFBA00;
+  font-weight: 100;
+}
+.details .box-icon:hover {
+  background-color: #FFBA00;
+}
+.details .box-icon:hover i:hover {
+  color: #171717;
+}
+.details h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 5px;
+}
+.details span {
+  font-size: 15px;
+  color: #C0C0C0;
+  margin-left: 5px;
+}
+.details .span {
+  width: 100%;
+  border: 0.1px solid #C0C0C0;
+  margin: 10px 0;
+}
+.details .information-icons .box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.details .information-icons .box i {
+  color: #FFBA00;
+  font-size: 20px;
+}
+.details .information-icons .box:hover {
+  background-color: #FFBA00;
+}
+.details .information-icons .box:hover i {
+  color: #171717;
+}
+.details .form {
+  padding: 20px;
+}
+.details .form form h2 {
+  font-size: 62px;
+  color: #FFFFFF;
+  font-family: "oswald";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "Oswald";
+}
+.details .form form label {
+  font-size: 18px;
+  font-family: "DM Sans";
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.details .form form label span {
+  color: #FFBA00;
+}
+.details .form form input {
+  background-color: #171717;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #C0C0C0;
+  border: none;
+}
+.details .form form .btn {
+  width: 165px;
+  height: 45px;
+  background-color: #FFBA00;
+  color: #FFFFFF;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "DM Sans";
+  margin-left: 11px;
+  height: 60px;
+  width: 200px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+
+.google-map {
+  background-color: #000000;
+  padding: 30px 0 120px 0;
+}/*# sourceMappingURL=style.css.map */
